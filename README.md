@@ -1,24 +1,3 @@
-<!-- To start
-```sh
-uv venv --python 3.12 --seed
-source .venv/bin/activate
-uv sync         
-```
-
-To download model
-
-```sh
-./setup
-```
-
-If you want to build the dataset from scratch to get the latest words you can run
-
-```sh
-source .venv/bin/activate
-uv sync --extra dataset
-./build_dataset.sh
-python -m pip uninstall -y en-core-web-s # to uninstall spacy deps, if failed
-``` -->
 # Wordle LLM
 
 
@@ -67,9 +46,9 @@ The script will:
 
 ---
 
-## (Optional) Build the dataset
+## (Optional) Rebuild the dataset
 
-Dataset helpers are an **optional extra** defined under `[project.optional-dependencies]`. Install them only when you need to (they include `spacy`, `inflect`, `wordfreq`):
+If you want to get the latest Wordle solutions and stats, run
 
 ```bash
 source .venv/bin/activate
@@ -77,10 +56,10 @@ uv sync --extra dataset
 ./build_dataset.sh
 ```
 
-If you run into spaCy model import issues, try removing the small English model:
+If the spaCy model fails to be removed by the `build_dataset.sh` script, you can manually remove it with
 
 ```bash
-python -m pip uninstall -y en-core-web-sm
+python -m pip uninstall -y en-core-web-s
 ```
 
 ---
