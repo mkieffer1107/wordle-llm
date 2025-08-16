@@ -92,10 +92,9 @@ def play_wordle(model: str, reasoning_effort: ReasoningEffort, render_mode: str,
 
     # 2. Prepare initial prompts
     system_prompt_text = (
-        # "You are an expert Wordle player. Your objective is to guess a 5-letter secret word in 6 tries. "
-        # "I will provide the current game state via text and an image of the board after each of your guesses. "
-        # "Your response MUST be a single, valid 5-letter English word enclosed in square brackets, like [WORD]."
-        "Do not play the game. Please tell me what you see"
+        "You are an expert Wordle player. Your objective is to guess a 5-letter secret word in 6 tries. "
+        "I will provide the current game state via text and an image of the board after each of your guesses. "
+        "Your response MUST be a single, valid 5-letter English word enclosed in square brackets, like [WORD]."
     )
     system_prompt = {"role": "system", "content": system_prompt_text}
 
