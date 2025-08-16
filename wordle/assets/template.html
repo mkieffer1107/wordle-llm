@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Wordle</h1>
+        <button class="help-button" id="help-button">?</button>
+    </div>
+    <div class="instructions">Guess the 5-letter word in 6 tries</div>
+    
+    {message_html}
+    
+    <div class="game-container">
+        <div class="grid" id="grid">
+            {grid_html}
+        </div>
+        
+        <div class="keyboard" id="keyboard">
+            {keyboard_html}
+        </div>
+    </div>
+
+    <!-- No message or modal shown -->
+</body>
+</html>

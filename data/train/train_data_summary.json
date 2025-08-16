@@ -1,0 +1,27 @@
+{
+    "parameters": {
+        "zipf_frequency_threshold": 2.5,
+        "saved_rejected_plurals_file": true
+    },
+    "counts": {
+        "initial_valid_words": 14855,
+        "excluded_test_words": 2339,
+        "initial_candidates": 12516,
+        "removed_plural_nouns": 3905,
+        "after_plural_filter": 8611,
+        "final_training_set": 1113
+    },
+    "output_files": [
+        {
+            "filename": "train.txt",
+            "directory": "data/train",
+            "entry_count": 1113,
+            "zipf_frequency_range": "5.51 - 2.50"
+        },
+        {
+            "filename": "rejected_plurals.txt",
+            "directory": "data/processed",
+            "entry_count": 3905
+        }
+    ]
+}

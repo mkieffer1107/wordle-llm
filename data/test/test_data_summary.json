@@ -1,0 +1,34 @@
+{
+    "files": {
+        "3_to_4_steps": {
+            "filename": "3_to_4_steps.txt",
+            "entry_count": 335,
+            "difficulty_range (avg_steps)": "3.2980 - 3.9980"
+        },
+        "4_to_5_steps": {
+            "filename": "4_to_5_steps.txt",
+            "entry_count": 638,
+            "difficulty_range (avg_steps)": "4.0060 - 4.9940"
+        },
+        "5_or_more_steps": {
+            "filename": "5_or_more_steps.txt",
+            "entry_count": 50,
+            "difficulty_range (avg_steps)": "5.0060 - 6.0920"
+        },
+        "invalid": {
+            "filename": "invalid.txt",
+            "entry_count": 1,
+            "difficulty_range (avg_steps)": "0.0000 - 0.0000"
+        },
+        "future_words": {
+            "filename": "future_words.txt",
+            "entry_count": 1315
+        }
+    },
+    "global": {
+        "historical_words_count": 1024,
+        "future_words_count": 1315,
+        "test_set_count": 2339,
+        "files_created": 5
+    }
+}

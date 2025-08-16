@@ -212,6 +212,20 @@ h1 {
     gap: 12px;
 }
 
+.status-message {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    border-radius: 4px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+}
+
 .message.show {
     opacity: 1;
     pointer-events: auto;
